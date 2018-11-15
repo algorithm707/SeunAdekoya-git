@@ -1,0 +1,473 @@
+SELECT * FROM complaints ;	dislay all complaints in the database
+SELECT * FROM complaints;	show me all complaints in the database
+SELECT * FROM complaints;	list all complaints in the database
+SELECT * FROM complaints;	picture all complaints in the database
+SELECT * FROM complaints;	highlight all complaints 
+SELECT * FROM complaints;	list all complaints
+SELECT * FROM complaints;	display all complaints 
+SELECT * FROM complaints;	show all complaints in the database
+SELECT * FROM complaints;	list all rows of complaints in the database
+SELECT * FROM complaints GROUP BY Issue;	group all complaints by issues
+SELECT * FROM complaints GROUP BY Issue;	arrange all complaints by issue
+SELECT * FROM complaints GROUP BY Issue;	list all complaints by issues
+SELECT * FROM complaints GROUP BY Issue;	select all complaints by issue
+SELECT * FROM complaints GROUP BY Issue;	show me all complaints in the database by issues
+SELECT * FROM complaints GROUP BY Product;	group all complaints by products
+SELECT * FROM complaints GROUP BY Product;	arrange all complaints by product
+SELECT * FROM complaints GROUP BY Product;	list all complaints by products
+SELECT * FROM complaints GROUP BY Product;	select all complaints by product
+SELECT * FROM complaints GROUP BY Product;	show me all complaints in the database by products
+SELECT * FROM complaints GROUP BY Product;	sort all complaints by product
+SELECT * FROM complaints GROUP BY Sub-product;	group all complaints by sub-products
+SELECT * FROM complaints GROUP BY Sub-product;	arrange all complaints by subproduct
+SELECT * FROM complaints GROUP BY Sub-product;	list all complaints by sub products
+SELECT * FROM complaints GROUP BY Sub-product;	select all complaints by sub-product
+SELECT * FROM complaints GROUP BY Sub-product;	show me all complaints in the database by subproducts
+SELECT * FROM complaints GROUP BY Sub-product;	sort all complaints by subproduct
+SELECT * FROM complaints WHERE Date received =3/12/1994;	show the item for all complaints with Date received 3/12/1994
+SELECT * FROM complaints WHERE Date received =3/12/1994;	show the row for all complaints if Date received is 3/12/1994
+SELECT * FROM complaints WHERE Date received =3/12/1994;	display items for all complaints if Date received 3/12/1994
+SELECT * FROM complaints WHERE Date received =3/12/2012;	show the complaints with Date received of 12th of march, 2012
+SELECT * FROM complaints WHERE Product ='mortgage';	show the complaints with Product identified as mortgage
+SELECT * FROM complaints WHERE Product ='credit card';	show the complaints with Product identified as credit card
+SELECT * FROM complaints WHERE (Product ='student loan'  AND  'debt collection' AND 'credit reporting');	show the complaints with Product identified as student loan, debt collection and credit reporting
+SELECT * FROM complaints WHERE (Product ='student loan'  OR 'debt collection' );	show the  complaints with Product identified as student loan or debt collection 
+SELECT * FROM complaints WHERE (Product ='student loan'  OR 'debt collection' );	show the rows for all complaints with Product identified as student loan or debt collection 
+SELECT * FROM complaints WHERE Date received =3/12/1994;	list all complaints of Date received 3/12/1994
+SELECT * FROM complaints WHERE Issue ='bankruptcy';	show  all complaints with Issue identified as bankruptcy
+SELECT * FROM complaints WHERE Sub-Issue ='account status';	show  all complaints with Sub-Issue identified as account status
+SELECT * FROM complaints WHERE Company ='AMERICAN EXPRESS COMPANY';	show the items for all complaints with Company equal to AMERICAN EXPRESS COMPANY
+SELECT * FROM complaints WHERE State ='NJ';	highlight the items for all complaints with state code as NJ
+SELECT * FROM complaints WHERE Tags ='older American';	show all complaints with tag name of older American
+SELECT * FROM complaints WHERE Submitted Via ='Referral';	show the rows in the complaints which mode of submission is referral
+SELECT *  FROM complaints WHERE Date sent to company =11/04/2014;	show all complaints whose date sent is 11/04/2014
+SELECT * FROM complaints WHERE Company response to consumer ='closed with explanation';	show  all complaints with company response to consumer as closed with explanation
+SELECT * FROM complaints WHERE Timely response? ='Yes';	show all complaints with timely response of yes
+SELECT * FROM complaints WHERE Consumer disputed? ='No';	show the rows for all complaints identified as not consumer disputed
+SELECT * FROM complaints WHERE Complaint ID =759217;	select all complaints with complaint id of 759217
+SELECT * FROM complaints WHERE Consumer consent provided? ='N/A';	show  all complaints with consumer consent provided as N/A
+SELECT * FROM complaints WHERE ZIP code =48332;	show all complaints with zip code of 48332
+SELECT * FROM complaints WHERE Consumer complaint narrative ='N/A';	show items for all complaints with consumer complaint narrative stated as XXX-XXX is not allowing payment
+SELECT *  FROM complaints WHERE Date received =@DATE RECEIVED;	identify all complaints with Date received @DATE RECEIVED
+SELECT * FROM complaints WHERE Date received =03/12/2012;	picture  all complaints with Date received 12th of march, 2012
+SELECT * FROM complaints WHERE Date received =04/03/2014;	display all complaints with Date received  April 3rd, 2014
+SELECT * FROM complaints WHERE Date received =11/05/2015;	what are the rows for all complaints with Date received  11/01/2015
+SELECT Product FROM complaints WHERE Product =@PRODUCT;	show the Product for all complaints with Product @PRODUCT
+SELECT Product FROM complaints WHERE Date received =3/12/1994;	show the product for all complaints with Date received 3/12/1994
+SELECT Product FROM complaints WHERE Date received =3/12/1994;	show  product for all complaints if sub-pro is 3/12/1994
+SELECT Product FROM complaints WHERE Date received =3/12/1994;	show  product for all complaints of Date received 3/12/1994
+SELECT Product FROM complaints WHERE Date received =3/12/2012;	show the product for all complaints with Date received 12th of march, 2012
+SELECT Product FROM complaints WHERE Product ='mortgage';	show the product for all complaints with Product identified as mortgage
+SELECT Product FROM complaints WHERE Product ='credit card';	show the product for all complaints with Product identified as credit card
+SELECT Product FROM complaints WHERE (Product ='student loan'  AND  'debt collection' AND 'credit reporting');	show the product for all complaints with Product identified as student loan, debt collection and credit reporting
+SELECT Product FROM complaints WHERE (Product ='student loan'  OR 'debt collection' );	show the product for all complaints with Product identified as student loan or debt collection 
+SELECT Product FROM complaints WHERE (Product ='student loan'  OR 'debt collection' );	show the product for complaints with Product identified as student loan or debt collection 
+SELECT Product FROM complaints WHERE Date received =3/12/1994;	show  product for complaints of Date received 3/12/1994
+SELECT Product FROM complaints WHERE Issue ='bankruptcy';	show the products for all complaints with Issue identified as bankruptcy
+SELECT Product FROM complaints WHERE Sub-Issue ='account status';	show the products for all complaints with Sub-Issue identified as account status
+SELECT Product FROM complaints WHERE Company ='AMERICAN EXPRESS COMPANY';	show the product for all complaints with Company equal to AMERICAN EXPRESS COMPANY
+SELECT Product FROM complaints WHERE State ='NJ';	show the products for all complaints with state code as NJ
+SELECT Product FROM complaints WHERE Tags ='older American';	show the products for all complaints with tag name of older American
+SELECT Product  FROM complaints WHERE Submitted Via ='Referral';	show the  products for all complaints which mode of submission is referral
+SELECT Product FROM complaints WHERE Date sent to company =11/04/2014;	show the products for all complaints whose date sent is 11/04/2014
+SELECT Product FROM complaints WHERE Company response to consumer ='closed with explanation';	show the products for all complaints with company response to consumer as closed with explanation
+SELECT Product FROM complaints WHERE Timely response? ='Yes';	show the products for all complaints with timely response of yes
+SELECT Product FROM complaints WHERE Consumer disputed? ='No';	show the product for all complaints identified as not consumer disputed
+SELECT Product FROM complaints WHERE Complaint ID =759217;	show the product for all complaints with complaint id of 759217
+SELECT Product FROM complaints WHERE Consumer consent provided? ='N/A';	show the product for all complaints with consumer consent provided as N/A
+SELECT Product FROM complaints WHERE ZIP code =48332;	show the product for all complaints with zip code of 48332
+SELECT Product FROM complaints WHERE Consumer complaint narrative ='N/A';	show the product for all complaints with consumer complaint narrative stated as XXX-XXX is not allowing payment
+SELECT Product FROM complaints WHERE Date received =@DATE RECEIVED;	bear_witness the products for all complaints with Date received @DATE RECEIVED
+SELECT Product FROM complaints WHERE Date received =01/12/2010;	picture the products for all complaints with Date received 12th of january, 2010
+SELECT Product FROM complaints WHERE Date received =02/06/2005;	display the products for all complaints with Date received  February 6, 2005
+SELECT Product FROM complaints WHERE Date received =11/05/2015;	what is the product for all complaints with Date received  11/05/2015
+SELECT Company FROM complaints WHERE Company =@COMPANY;	picture the Company for all complaints with Company @COMPANY
+SELECT Company FROM complaints WHERE State =@STATE;	show the companies for all complaints with State @STATE
+SELECT Issue FROM complaints WHERE State ='MI';	list the issues for all complaints with State code MI
+SELECT Timely response? FROM complaints WHERE State ='NY';	picture the timely response for all complaints with State code of NY
+SELECT ZIP code FROM complaints WHERE Product ='mortgage';	show the ZIP code for all complaints with mortgage product
+SELECT ZIP code FROM complaints WHERE Sub-issue ='debt was paid';	bear_witness the ZIP code for all complaints with Sub-Issue listed as debt paid
+SELECT ZIP code FROM complaints WHERE (Company ='U.S.BANCORP' AND SUBMITTED VIA='Web');	picture the ZIP code for all complaints where company is U.S. BANCORP and submission is through the web
+SELECT Product FROM complaints WHERE Tags =@TAGS;	show the product name for all complaints with Tags @TAGS
+SELECT Company FROM complaints WHERE Tags ='servicemembers';	display the company for all complaints with tag of service member
+SELECT Issue FROM complaints WHERE (Product ='mortgage' AND Sub-product='debt collection');	highlight the issue for all complaints with mortgage product and debt collection sub-product
+SELECT Submitted via provided? FROM complaints WHERE Consumer consent provided? =@CONSUMER CONSENT PROVIDED?;	show how submission were made for all complaints with Consumer consent provided @CONSUMER CONSENT PROVIDED?
+SELECT Consumer consent provided? FROM complaints WHERE Submitted via ='Fax';	show the consumer consent provided for all complaints with Submitted via fax
+SELECT Submitted via FROM complaints WHERE Submitted via =@SUBMITTED VIA;	display the Submitted via for all complaints with Submitted via @SUBMITTED VIA
+SELECT Submitted via FROM complaints WHERE Submitted via =@SUBMITTED VIA;	picture the Submitted via for all complaints with Submitted via @SUBMITTED VIA
+SELECT Date received FROM complaints WHERE Date sent to company =@DATE SENT TO COMPANY;	show the Date  received  for all complaints with Date sent to company @DATE SENT TO COMPANY
+SELECT Date sent to company FROM complaints WHERE Sub-issue ='cash not mine';	highlight the Date sent to company for all complaints with Sub-issue is cash not mine
+SELECT Date sent to company FROM complaints WHERE Date received =@DATE RECEIVED;	select the Date sent to company for all complaints with Date received @DATE RECEIVED
+SELECT Date sent to company FROM complaints WHERE Date sent to company =@DATE SENT TO COMPANY;	picture the Date sent to company for all complaints with Date sent to company @DATE SENT TO COMPANY
+SELECT Company response to consumer FROM complaints WHERE Company response to consumer =@COMPANY RESPONSE TO CONSUMER;	show the Company response to consumer for all complaints with Company response to consumer @COMPANY RESPONSE TO CONSUMER
+SELECT Company response to consumer FROM complaints WHERE Company response to consumer =@COMPANY RESPONSE TO CONSUMER;	display the Company response to consumer for all complaints with Company response to consumer @COMPANY RESPONSE TO CONSUMER
+SELECT Company response to consumer FROM complaints WHERE Company response to consumer =@COMPANY RESPONSE TO CONSUMER;	picture the Company response to consumer for all complaints with Company response to consumer @COMPANY RESPONSE TO CONSUMER
+SELECT Timely response? FROM complaints WHERE Timely response? =@TIMELY RESPONSE?;	show the Timely response? for all complaints with Timely response? @TIMELY RESPONSE?
+SELECT Timely response? FROM complaints WHERE Issue ='fraud';	display the Timely response? for all complaints if issue is fraud
+SELECT Timely response? FROM complaints WHERE (Issue='Theft'  OR Issue='scam');	picture the Timely response? for all complaints for theft or scam issue
+SELECT Consumer disputed? FROM complaints WHERE  (Issue='loan servicing'  AND Issue='payments' AND Issue='escrow account');	show the Consumer disputed? for all complaints with loan servicing, payment and escrow account issues
+SELECT Consumer disputed? FROM complaints WHERE Consumer disputed? =@CONSUMER DISPUTED?;	list the Consumer disputed? for all complaints with Consumer disputed? @CONSUMER DISPUTED?
+SELECT Consumer disputed? FROM complaints WHERE Consumer disputed? =@CONSUMER DISPUTED?;	show the Consumer disputed? for all complaints with Consumer disputed? @CONSUMER DISPUTED?
+SELECT Complaint ID FROM complaints WHERE Product ='consumer loan';	show the Complaint ID for all complaints where the product is consumer loan
+SELECT Complaint ID FROM complaints WHERE Sub-product ='credit card';	select the Complaint ID for all complaints with sub-product of credit card 
+SELECT Complaint ID FROM complaints WHERE Sub-product ='medical';	display the Complaint ID for all complaints identified as medical sub-product 
+SELECT COUNT(*) FROM complaints 	show me the total number of complaints
+SELECT COUNT(*) FROM complaints 	display the total number of complaints
+SELECT COUNT(*) FROM complaints 	calculate the total number of complaints
+SELECT COUNT(*) FROM complaints 	what is the total number of all complaints
+SELECT COUNT(*) FROM complaints 	show the total number of complaints
+SELECT COUNT(*) FROM complaints 	how many  complaints  in the database
+SELECT COUNT(*) FROM complaints WHERE Tags='older American';	how many  complaints  with tags older american
+SELECT COUNT(*) FROM complaints WHERE Tags='servicemen';	how many  complaints  with tags servicemen
+SELECT COUNT(*) FROM complaints WHERE Tags='older American';	what is the number of complaints with tags older american
+SELECT COUNT(*) FROM complaints WHERE Tags='servicemen';	what is the number of complaints with tags servicemen
+SELECT COUNT(*) FROM complaints WHERE(Tags='older American' OR 'servicemen');	how many  complaints  are with tags older american or servicemen
+SELECT COUNT(*) FROM complaints WHERE Issue='foreclosure';	how many  complaints  with issues of foreclosure 
+SELECT COUNT(*) FROM complaints WHERE Product='money transfers';	how many  complaints  with money transfers product
+SELECT COUNT(*) FROM complaints WHERE Sub-product='FHA mortgage';	how many  complaints  with FHA mortgage sub product 
+SELECT COUNT(*) FROM complaints WHERE Sub-issue='frequent or repeated calls';	how many  complaints  with frequent or repeated calls sub issue
+SELECT COUNT(*) FROM complaints WHERE Company public response=' ';	how many  complaints  with no company public response
+SELECT COUNT(*) FROM complaints WHERE Company='EQUIFAX';	how many  complaints  with company name Equifax and wells fargo
+SELECT COUNT(*) FROM complaints WHERE State='VA';	how many  complaints  with VA state code
+SELECT COUNT(*) FROM complaints WHERE Timely response='Yes';	how many  complaints  with timely response
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Tags;	how many date received in complaints is associated with Tags @TAGS
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many Date received in complaints associates with Complaint ID @COMPLAINT ID
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Product;	how many Date received in complaints relates to product 
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Sub-product;	how many Date received in complaints is related to Sub-product 
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Issue;	how many date received in complaints relates to issue
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many date received in complaints pertains to sub issue
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many Date received in complaints relates to consumer complaint narrative  
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Company public response;	how many Date received in complaints relates to company public response
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Company;	how many Date received in complaints relates to company 
+SELECT Date received, COUNT(*) FROM complaints GROUP BY State;	how many date received in complaints correlates to state
+SELECT Date received, COUNT(*) FROM complaints GROUP BY ZIP code;	how many Date received in complaints relates to zip code
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Tags;	how many Date received in complaints relates to tags
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many date received in complaints relates to consumer consent
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Submitted via;	how many date received in complaints relates to mode of submission
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many date received in complaints relates to date sent to company
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many Date received in complaints relates to company response to consumer
+SELECT Date received, COUNT(*) FROM complaints GROUP BY timely response?;	how many Date received in complaints relates to timely response
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many date received in complaints relates to consumer disputed
+SELECT Date received, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many date received in complaints correlate to complaint id
+SELECT Product, COUNT(*) FROM complaints GROUP BY Product;	how many Product in complaints associate Product @PRODUCT
+SELECT Product, COUNT(*) FROM complaints GROUP BY Product;	how many Product in complaints are associated with Product 
+SELECT Product, COUNT(*) FROM complaints GROUP BY Date received;	how many products in complaints relates to Date received
+SELECT Product, COUNT(*) FROM complaints GROUP BY Sub-product;	how many products in complaints is related to Sub-product 
+SELECT Product, COUNT(*) FROM complaints GROUP BY Issue;	how many products in complaints relates to issue
+SELECT Product, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many products in complaints pertains to sub issue
+SELECT Product, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many products in complaints relates to consumer complaint narrative  
+SELECT Product, COUNT(*) FROM complaints GROUP BY Company public response;	how many products in complaints relates to company public response
+SELECT Product, COUNT(*) FROM complaints GROUP BY Company;	how many products in complaints relates to company 
+SELECT Product, COUNT(*) FROM complaints GROUP BY State;	how many products in complaints correlates to state
+SELECT Product, COUNT(*) FROM complaints GROUP BY ZIP code;	how many products in complaints relates to zip code
+SELECT Product, COUNT(*) FROM complaints GROUP BY Tags;	how many products in complaints relates to tags
+SELECT Product, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many products in complaints relates to consumer consent
+SELECT Product, COUNT(*) FROM complaints GROUP BY Submitted via;	how many products in complaints relates to mode of submission
+SELECT Product, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many products in complaints relates to date sent to company
+SELECT Product, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many product in complaints relates to company response to consumer
+SELECT Product, COUNT(*) FROM complaints GROUP BY timely response?;	how many product in complaints relates to timely response
+SELECT Product, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many product in complaints relates to consumer disputed
+SELECT Product, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many Product in complaints correlate to complaint id
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Sub-product;	how many Sub-product in complaints associate Sub-product @SUB-PRODUCT
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Product;	how many Sub-product in complaints are associated with Product 
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Date received;	how many Subproduct in complaints relates to Date received
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Sub-product;	how many Sub-product in complaints is related to Sub-product 
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Issue;	how many Subproduct in complaints relates to issue
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many Sub-product in complaints pertains to sub issue
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many Sub-products in complaints relates to consumer complaint narrative  
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Company public response;	how many Sub-products in complaints relates to company public response
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Company;	how many Sub-products in complaints relates to company 
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY State;	how many Sub-product in complaints correlates to state
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY ZIP code;	how many Sub-product in complaints relates to zip code
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Tags;	how many sub-product in complaints relates to tags
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many Sub product in complaints relates to consumer consent
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Submitted via;	how many Sub-products in complaints relates to mode of submission
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many Sub-products in complaints relates to date sent to company
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many sub product in complaints relates to company response to consumer
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY timely response?;	how many Sub-product in complaints relates to timely response
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many Subproduct in complaints relates to consumer disputed
+SELECT Sub-product, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many Sub-product in complaints correlate to complaint id
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Issue;	how many Issue in complaints associate Issue @ISSUE
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Product;	how many  issue in complaints are associated with Product 
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Date received;	how many  Issue in complaints relates to Date received
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  issue in complaints is related to Sub-product 
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Issue;	how many  issue in complaints relates to issue
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  issue in complaints pertains to sub issue
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  issue in complaints relates to consumer complaint narrative  
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Company public response;	how many  issue in complaints relates to company public response
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Company;	how many  issue in complaints relates to company 
+SELECT Issue, COUNT(*) FROM complaints GROUP BY State;	how many  issue in complaints correlates to state
+SELECT Issue, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  issue in complaints relates to zip code
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Tags;	how many  issue in complaints relates to tags
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  issue in complaints relates to consumer consent
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Submitted via;	how many  issue in complaints relates to mode of submission
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  issue in complaints relates to date sent to company
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  issue in complaints relates to company response to consumer
+SELECT Issue, COUNT(*) FROM complaints GROUP BY timely response?;	how many  issue in complaints relates to timely response
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  issue in complaints relates to consumer disputed
+SELECT Issue, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  issue in complaints correlate to complaint id
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many Sub-issue in complaints associate Sub-issue @SUB-ISSUE
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Product;	how many  sub issue in complaints are associated with Product 
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Date received;	how many  sub issue in complaints relates to Date received
+SELECTSub-issue, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  sub issue in complaints is related to Sub-product 
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Issue;	how many sub issue in complaints relates to issue
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  sub issue in complaints pertains to sub issue
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  sub issue in complaints relates to consumer complaint narrative  
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Company public response;	how many  sub issue in complaints relates to company public response
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Company;	how many  sub issue in complaints relates to company 
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY State;	how many  sub issue in complaints correlates to state
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  sub issue in complaints relates to zip code
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Tags;	how many  sub issue in complaints relates to tags
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  sub issue in complaints relates to consumer consent
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Submitted via;	how many sub issue in complaints relates to mode of submission
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  sub issue in complaints relates to date sent to company
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  isub issue in complaints relates to company response to consumer
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY timely response?;	how many sub issue in complaints relates to timely response
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  sub issue in complaints relates to consumer disputed
+SELECT Sub-issue, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  sub issue in complaints correlate to complaint id
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many Consumer complaint narrative in complaints associate Consumer complaint narrative @CONSUMER COMPLAINT NARRATIVE
+SELECT Consumer complaint narrative , COUNT(*) FROM complaints GROUP BY Product;	how many  Consumer complaint narrative  in complaints are associated with Product 
+SELECT Consumer complaint narrative , COUNT(*) FROM complaints GROUP BY Date received;	how many  Consumer complaint narrative  in complaints relates to Date received
+SELECT Consumer complaint narrative , COUNT(*) FROM complaints GROUP BY Sub-product;	how many  Consumer complaint narrative  in complaints is related to Sub-product 
+SELECT Consumer complaint narrative , COUNT(*) FROM complaints GROUP BY Issue;	how many Consumer complaint narrative  in complaints relates to issue
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  Consumer complaint narrative  in complaints pertains to sub issue
+SELECT Consumer complaint narrative , COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  Consumer complaint narrative  in complaints relates to consumer complaint narrative  
+SELECT Consumer complaint narrative , COUNT(*) FROM complaints GROUP BY Company public response;	how many  Consumer complaint narrative  in complaints relates to company public response
+SELECT Consumer complaint narrative , COUNT(*) FROM complaints GROUP BY Company;	how many  Consumer complaint narrative  in complaints relates to company 
+SELECT Consumer complaint narrative , COUNT(*) FROM complaints GROUP BY State;	how many  Consumer complaint narrative  in complaints correlates to state
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  Consumer complaint narrative  in complaints relates to zip code
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Tags;	how many  Consumer complaint narrative  in complaints relates to tags
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  Consumer complaint narrative in complaints relates to consumer consent
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Submitted via;	how many Consumer complaint narrative  in complaints relates to mode of submission
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  Consumer complaint narrative  in complaints relates to date sent to company
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  Consumer complaint narrative  in complaints relates to company response to consumer
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY timely response?;	how many Consumer complaint narrative  in complaints relates to timely response
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  Consumer complaint narrative  in complaints relates to consumer disputed
+SELECT Consumer complaint narrative, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  Consumer complaint narrative  in complaints correlate to complaint id
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Company public response;	how many Company public response in complaints associate Company public response @COMPANY PUBLIC RESPONSE
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Product;	how many  Company public response  in complaints are associated with Product 
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Date received;	how many  Company public response  in complaints relates to Date received
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  Company public response  in complaints is related to Sub-product 
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Issue;	how many Company public response  in complaints relates to issue
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  Company public response  in complaints pertains to sub issue
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  Company public response  in complaints relates to consumer complaint narrative  
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Company public response;	how many  Company public response  in complaints relates to company public response
+SELECT Company public response , COUNT(*) FROM complaints GROUP BY Company;	how many  Company public response  in complaints relates to company 
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY State;	how many  Company public response  in complaints correlates to state
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  Company public response  in complaints relates to zip code
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Tags;	how many  Company public response  in complaints relates to tags
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  Company public response in complaints relates to consumer consent
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Submitted via;	how many Company public response  in complaints relates to mode of submission
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  Company public response  in complaints relates to date sent to company
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  Company public response  in complaints relates to company response to consumer
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY timely response?;	how many Company public response  in complaints relates to timely response
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  Company public response  in complaints relates to consumer disputed
+SELECT Company public response, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  Company public response  in complaints correlate to complaint id
+SELECT Company, COUNT(*) FROM complaints GROUP BY Company;	how many Company in complaints associate Company @COMPANY
+SELECT Company, COUNT(*) FROM complaints GROUP BY Product;	how many  Company   in complaints are associated with Product 
+SELECT Company, COUNT(*) FROM complaints GROUP BY Date received;	how many  Company   in complaints relates to Date received
+SELECT Company, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  Company  in complaints is related to Sub-product 
+SELECT Company, COUNT(*) FROM complaints GROUP BY Issue;	how many Company   in complaints relates to issue
+SELECT Company, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  Company  in complaints pertains to sub issue
+SELECT Company, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  Company   in complaints relates to consumer complaint narrative  
+SELECT Company, COUNT(*) FROM complaints GROUP BY Company public response;	how many  Company   in complaints relates to company public response
+SELECT Company, COUNT(*) FROM complaints GROUP BY Company;	how many  Company   in complaints relates to company 
+SELECT Company, COUNT(*) FROM complaints GROUP BY State;	how many  Company   in complaints correlates to state
+SELECT Company, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  Company   in complaints relates to zip code
+SELECT Company, COUNT(*) FROM complaints GROUP BY Tags;	how many  Company   in complaints relates to tags
+SELECT Company, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  Company  in complaints relates to consumer consent
+SELECT Company, COUNT(*) FROM complaints GROUP BY Submitted via;	how many Company   in complaints relates to mode of submission
+SELECT Company, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  Company   in complaints relates to date sent to company
+SELECT Company, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  Company  in complaints relates to company response to consumer
+SELECT Company, COUNT(*) FROM complaints GROUP BY timely response?;	how many Company  in complaints relates to timely response
+SELECT Company, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  Company in complaints relates to consumer disputed
+SELECT Company, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  Company in complaints correlate to complaint id
+SELECT State, COUNT(*) FROM complaints GROUP BY State;	how many State in complaints associate State @STATE
+SELECT State, COUNT(*) FROM complaints GROUP BY Product;	how many  State   in complaints are associated with Product 
+SELECT State, COUNT(*) FROM complaints GROUP BY Date received;	how many  State   in complaints relates to Date received
+SELECT State, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  state  in complaints is related to Sub-product 
+SELECT State, COUNT(*) FROM complaints GROUP BY Issue;	how many state   in complaints relates to issue
+SELECT State, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  State  in complaints pertains to sub issue
+SELECT State, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  state   in complaints relates to consumer complaint narrative  
+SELECT State, COUNT(*) FROM complaints GROUP BY Company public response;	how many  state   in complaints relates to company public response
+SELECT State, COUNT(*) FROM complaints GROUP BY Company;	how many  state   in complaints relates to company 
+SELECT State, COUNT(*) FROM complaints GROUP BY State;	how many  state   in complaints correlates to state
+SELECT State, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  state   in complaints relates to zip code
+SELECT State, COUNT(*) FROM complaints GROUP BY Tags;	how many  state   in complaints relates to tags
+SELECT State, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  state  in complaints relates to consumer consent
+SELECT State, COUNT(*) FROM complaints GROUP BY Submitted via;	how many  state   in complaints relates to mode of submission
+SELECT State, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  state   in complaints relates to date sent to company
+SELECT State, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  state  in complaints relates to company response to consumer
+SELECT State, COUNT(*) FROM complaints GROUP BY timely response?;	how many  state  in complaints relates to timely response
+SELECT State, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  state in complaints relates to consumer disputed
+SELECT State, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  state in complaints correlate to complaint id
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY ZIP code;	how many ZIP code in complaints associate ZIP code @ZIP CODE
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Product;	how many  zip code   in complaints are associated with Product 
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Date received;	how many  zip code   in complaints relates to Date received
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  ZIP code  in complaints is related to Sub-product 
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Issue;	how many ZIP code   in complaints relates to issue
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  ZIP code  in complaints pertains to sub issue
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  ZIP code   in complaints relates to consumer complaint narrative  
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Company public response;	how many  ZIP code   in complaints relates to company public response
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Company;	how many  zip code   in complaints relates to company 
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY State;	how many  ZIP code   in complaints correlates to state
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  zip code   in complaints relates to zip code
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Tags;	how many  ZIP code   in complaints relates to tags
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  zip code  in complaints relates to consumer consent
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Submitted via;	how many ZIP code   in complaints relates to mode of submission
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  ZIP code   in complaints relates to date sent to company
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  zip code  in complaints relates to company response to consumer
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY timely response?;	how many  ZIP code  in complaints relates to timely response
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  ZIP code in complaints relates to consumer disputed
+SELECT ZIP code, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  zip code in complaints correlate to complaint id
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Tags;	how many tags in complaints associate Tags @TAGS
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Product;	how many tags   in complaints are associated with Product 
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Date received;	how many  tags   in complaints relates to Date received
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  Tags  in complaints is related to Sub-product 
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Issue;	how many tags   in complaints relates to issue
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  Tags  in complaints pertains to sub issue
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  tags   in complaints relates to consumer complaint narrative  
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Company public response;	how many  Tags   in complaints relates to company public response
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Company;	how many  Tags   in complaints relates to company 
+SELECT Tags, COUNT(*) FROM complaints GROUP BY State;	how many  tags   in complaints correlates to state
+SELECT Tags, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  tags   in complaints relates to zip code
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Tags;	how many  Tags   in complaints relates to tags
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  Tags  in complaints relates to consumer consent
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Submitted via;	how many Tags   in complaints relates to mode of submission
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  Tags   in complaints relates to date sent to company
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  tags  in complaints relates to company response to consumer
+SELECT Tags, COUNT(*) FROM complaints GROUP BY timely response?;	how many  Tags  in complaints relates to timely response
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  Tags in complaints relates to consumer disputed
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  tags in complaints correlate to complaint id
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many Consumer consent provided? in complaints associate Consumer consent provided? @CONSUMER CONSENT PROVIDED?
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Product;	how many Consumer consent provided   in complaints are associated with Product 
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Date received;	how many Consumer consent provided   in complaints relates to Date received
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  Consumer consent provided  in complaints is related to Sub-product 
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Issue;	how many Consumer consent is   in complaints relates to issue
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  Consumer consent   in complaints pertains to sub issue
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many Consumer consent is   in complaints relates to consumer complaint narrative  
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Company public response;	how many  Consumer consent   in complaints relates to company public response
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Company;	how many  consumer consent provided   in complaints relates to company 
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY State;	how many   consumer consent provided   in complaints correlates to state
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY ZIP code;	how many   consumer consent provided   in complaints relates to zip code
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Tags;	how many   consumer consent provided   in complaints relates to tags
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many   consumer consent provided  in complaints relates to consumer consent
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Submitted via;	how many  consumer consent provided   in complaints relates to mode of submission
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many   consumer consent provided   in complaints relates to date sent to company
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many   consumer consent providedtags  in complaints relates to company response to consumer
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY timely response?;	how many   consumer consent provided  in complaints relates to timely response
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many   consumer consent provided in complaints relates to consumer disputed
+SELECT Consumer consent provided?, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many   consumer consent provided in complaints correlate to complaint id
+SELECT Submitted via, COUNT(*) FROM complaints GROUP BY Submitted via;	how many Submitted via in complaints associate Submitted via @SUBMITTED VIA
+SELECT Submitted via.Web, COUNT(*) FROM complaints GROUP BY Product;	how many web submissions   in complaints are associated with Product 
+SELECT Submitted via.Fax, COUNT(*) FROM complaints GROUP BY Date received;	how many  fax submissions  in complaints relates to Date received
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  Tags  in complaints is related to Sub-product 
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Issue;	how many tags   in complaints relates to issue
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  Tags  in complaints pertains to sub issue
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many  tags   in complaints relates to consumer complaint narrative  
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Company public response;	how many  Tags   in complaints relates to company public response
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Company;	how many  Tags   in complaints relates to company 
+SELECT Tags, COUNT(*) FROM complaints GROUP BY State;	how many  tags   in complaints correlates to state
+SELECT Tags, COUNT(*) FROM complaints GROUP BY ZIP code;	how many  tags   in complaints relates to zip code
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Tags;	how many  Tags   in complaints relates to tags
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many  Tags  in complaints relates to consumer consent
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Submitted via;	how many Tags   in complaints relates to mode of submission
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  Tags   in complaints relates to date sent to company
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many  tags  in complaints relates to company response to consumer
+SELECT Tags, COUNT(*) FROM complaints GROUP BY timely response?;	how many  Tags  in complaints relates to timely response
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many  Tags in complaints relates to consumer disputed
+SELECT Tags, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many  tags in complaints correlate to complaint id
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many Date sent to company in complaints associate Date sent to company @DATE SENT TO COMPANY
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Product;	how many Date sent to company   in complaints are associated with Product 
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Date received;	how many date sent to company   in complaints relates to Date received
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  date sent to company  in complaints is related to Sub-product 
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Issue;	how many date sent to company   in complaints relates to issue
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  date sent to company  in complaints pertains to sub issue
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many date sent to company   in complaints relates to consumer complaint narrative  
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Company public response;	how many  date sent to company   in complaints relates to company public response
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Company;	how many  date sent to company   in complaints relates to company 
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY State;	how many   date sent to company   in complaints correlates to state
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY ZIP code;	how many   date sent to company   in complaints relates to zip code
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Tags;	how many   date sent to company   in complaints relates to tags
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many   date sent to company  in complaints relates to consumer consent
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Submitted via;	how many  date sent to company   in complaints relates to mode of submission
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many   date sent to company   in complaints relates to date sent to company
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many   date sent to company  in complaints relates to company response to consumer
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY timely response?;	how many  date sent to company  in complaints relates to timely response
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many   date sent to company in complaints relates to consumer disputed
+SELECT Date sent to company, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many   date sent to company in complaints correlate to complaint id
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many Company response to consumer in complaints associate Company response to consumer @COMPANY RESPONSE TO CONSUMER
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Product;	how many Company response to consumer   in complaints are associated with Product 
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Date received;	how many Company response to consumer   in complaints relates to Date received
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  Company response to consumer  in complaints is related to Sub-product 
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Issue;	how many Company response to consumer   in complaints relates to issue
+SELECTCompany response to consumer, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  company response  to complaints pertains to sub issue
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many company response  to complaints relates to consumer complaint narrative  
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Company public response;	how many  company response  to complaints relates to company public response
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Company;	how many  company response  to complaints relates to company 
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY State;	how many   company response  to complaints correlates to state
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY ZIP code;	how many   company response  to complaints relates to zip code
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Tags;	how many   company response  to complaints relates to tags
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many   company response  to complaints relates to consumer consent
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Submitted via;	how many  company response  to complaints relates to mode of submission
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many   company response  to complaints relates to date sent to company
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many   company response  to complaints relates to company response to consumer
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY timely response?;	how many  company response  to complaints relates to timely response
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many   company response  to complaints relates to consumer disputed
+SELECT Company response to consumer, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many   company response  to complaints correlate to complaint id
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Timely response?;	how many Timely response? in complaints associate Timely response? @TIMELY RESPONSE?
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Product;	how many Timely response   in complaints are associated with Product 
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Date received;	how many timely response   in consumer   in complaints relates to Date received
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  timely response   in consumer  in complaints is related to Sub-product 
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Issue;	how many timely response   in consumer   in complaints relates to issue
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  timely response   in complaints pertains to sub issue
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many timely response   in complaints relates to consumer complaint narrative  
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Company public response;	how many  timely response   in complaints relates to company public response
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Company;	how many  Timely response   in complaints relates to company 
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY State;	how many   Timely response   in complaints correlates to state
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY ZIP code;	how many   timely response   in complaints relates to zip code
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Tags;	how many   timely response   in complaints relates to tags
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many   Timely response   in complaints relates to consumer consent
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Submitted via;	how many  timely response   in complaints relates to mode of submission
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  Timely response   in complaints relates to date sent to company
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many   timely response   in complaints relates to company response to consumer
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY timely response?;	how many  timely response   in complaints relates to timely response
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many   timely response   in complaints relates to consumer disputed
+SELECT Timely response?, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many   Timely response   in complaints correlate to complaint id
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many Consumer disputed? in complaints associate Consumer disputed? @CONSUMER DISPUTED?
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Product;	how many Consumer disputed   in complaints are associated with Product 
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Date received;	how many consumer disputed   in consumer   in complaints relates to Date received
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Sub-product;	how many  Consumer disputed   in consumer  in complaints is related to Sub-product 
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Issue;	how many consumer disputed   in consumer   in complaints relates to issue
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Sub-issue;	how many  consumer disputed   in complaints pertains to sub issue
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Consumer complaint narrative;	how many consumer disputede   in complaints relates to consumer complaint narrative  
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Company public response;	how many  consumer disputed   in complaints relates to company public response
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Company;	how many  Consumer disputed?   in complaints relates to company 
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY State;	how many   consumer disputed   in complaints correlates to state
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY ZIP code;	how many   consumer disputed  in complaints relates to zip code
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Tags;	how many   consumer disputed   in complaints relates to tags
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Consumer consent provided?;	how many   consumer disputed   in complaints relates to consumer consent
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Submitted via;	how many  Consumer disputed   in complaints relates to mode of submission
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Date sent to company;	how many  consumer disputed   in complaints relates to date sent to company
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Company response to consumer;	how many   consumer disputed   in complaints relates to company response to consumer
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY timely response?;	how many  consumer disputed   in complaints relates to timely response
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Consumer disputed?;	how many   consumer disputed   in complaints relates to consumer disputed
+SELECT Consumer disputed?, COUNT(*) FROM complaints GROUP BY Complaint ID;	how many   Consumer disputed   in complaints correlate to complaint id
+SELECT COUNT(*) FROM complaints WHERE Issue = 'mortgage';	list the number of complaints with mortgage issue
+SELECT COUNT(*) FROM complaints WHERE Issue = 'fraud';	list the number of complaints with fraud issue
+SELECT COUNT(*) FROM complaints WHERE Submitted via = 'Fax';	list the number of complaints with fax mode of submission
+SELECT COUNT(*) FROM complaints WHERE Timely response = 'Yes';	list the number of complaints with timely response
+SELECT COUNT(*) FROM complaints WHERE Company public response = ' ';	list the number of complaints with no company public response
+SELECT COUNT(*) FROM complaints WHERE Company = 'CITIBANK, N.A';	list the number of complaints for CITIBANK
+SELECT COUNT(*) FROM complaints WHERE Consumer complaint narrative = ' ';	list the number of complaints without complaint narrative
+SELECT COUNT(*) FROM complaints WHERE Product = 'Credit card'  AND  'Credit Reporting';	list the number of complaints for credit card and credit reporting products
+SELECT COUNT(*) FROM complaints WHERE (Product = 'Credit card' AND Sub-product = 'Checking account');	list the number of complaints for credit card products with checking account sub product
+SELECT COUNT(*) FROM complaints WHERE Issue = 'Repaying of loan';	list the number of complaints where the issue is the repaying of loan
+SELECT COUNT(*) FROM complaints WHERE Issue = 'mortgage';	number of complaints with mortgage issue
+SELECT COUNT(*) FROM complaints WHERE Issue = 'fraud';	number of complaints with fraud  issue
+SELECT COUNT(*) FROM complaints WHERE Submitted via = 'Fax';	number of complaints with fax mode of submission
+SELECT COUNT(*) FROM complaints WHERE Timely response = 'Yes';	number of complaints with timely response
+SELECT COUNT(*) FROM complaints WHERE Company public response = ' ';	number of complaints with  no company public response
+SELECT COUNT(*) FROM complaints WHERE Company = 'CITIBANK, N.A';	number of complaints for CITIBANK
+SELECT COUNT(*) FROM complaints WHERE Consumer complaint narrative = ' ';	number of complaints with without complaint narrative
+SELECT COUNT(*) FROM complaints WHERE Product = 'Credit card'  AND  'Credit Reporting';	number of complaints for credit card and credit reporting products
