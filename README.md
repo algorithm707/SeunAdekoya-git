@@ -1,7 +1,7 @@
-# Hello-World
+# ABOUT ME
 Hi guys,
-Algorithm707 here. I am a graduate student of computer science till december 2018. I generally work with C/java/Python. I have experience with data structures/algorithm design, GUI database development, Graph coloring/scheduling, system programming and multiprocessing on Linux/Unix platform as well as web development using HTML, CSS, Javascript/ PHP. My past projects include linux shell, graph coloring, java database app, python game and web development.
+Seun Adekoya here. I am a Software Engineer with 7+ years of software development experience. I generally work with java/Go/Python/C. I have experience with Distributed systems, Concurrency, ML/DL, Web development, Data processing and Engineering, NLP, Recommender systems and Embedded systems. 
 
-I intend exploring an interest in Artificial intelligence and deep learning. I would be starting a deep learning project soon and i would welcome positive suggestions.
+I intend exploring more projects and research in the AI and deep learning space. I would be updating this page with more projects soon and i would welcome positive suggestions.
 
 Cheers!
