@@ -1,5 +1,5 @@
-Application of Deep Learning techniques to Natural language interface for database part1
-
+#Application of Deep Learning techniques to Natural language interface for database part1
+```bash
 This is part of a software project submitted as part of requirements for Master of science in Computer science
 at Indiana state University.The aim of this project is to demonstrate the application of neural networks to
 generates sql queries from userinput natural language (English) interface for a database.
@@ -14,13 +14,15 @@ https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
 trainer: trains the RNN on the 473 training examples
 Graphical user interface: uses the python tkinter module to accepts user natural language questions and display
 the equivalent sql query to be executed against a database
+```
 
 
-
-Prerequisites
+#Prerequisites
 Python3
 Pytorch
 
 
-Run
+#Run
+```bash
 Python3 GUI_cpu_473_samples.py
+```
