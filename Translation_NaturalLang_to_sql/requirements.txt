@@ -1,0 +1,3 @@
+numpy <= 1.24.2
+torch >= 2.0.0
+panadas <= 0.21.0
