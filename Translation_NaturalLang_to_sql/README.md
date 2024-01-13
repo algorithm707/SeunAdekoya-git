@@ -32,11 +32,11 @@ python3 GUI_cpu_473_samples.py
 ## How to Use the Application
 Type a Natural language (Only English is supported) query or select from a list in the drop down
 
-![User Interface](https://github.com/yourusername/yourrepository/raw/main/path/to/your/image.png)
+![Natural language query](https://github.com/algorithm707/SeunAdekoya-git/blob/master/Translation_NaturalLang_to_sql/doc/gui_user_2.png)
 
 
 Generated SQL 
-![User Interface](https://github.com/yourusername/yourrepository/raw/main/path/to/your/image.png)
+![Generated SQL for DB query](https://github.com/algorithm707/SeunAdekoya-git/blob/master/Translation_NaturalLang_to_sql/doc/gui_user_3.png)
 
 
 ## Acknowledgments
